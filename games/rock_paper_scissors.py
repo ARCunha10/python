@@ -4,15 +4,12 @@ import sys
 try:
     import colorama
 except ModuleNotFoundError:
-    print("")
-    print("Colorama module is not installed.")
-    print("")
-    print("Please install colorama module running the command:")
-    print("")
-    print("pip3 install colorama")
-    print("")
-    print("And run the program again!")
-    print("")
+    print(
+        "\n Colorama module is not installed. \n"
+        + "\n Please install colorama module running the command: \n"
+        + "\n pip3 install colorama \n"
+        + "\n And run the program again! \n"
+    )
     sys.exit()
 
 from colorama import Fore, Back, Style
